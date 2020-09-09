@@ -1,0 +1,139 @@
+So let's go ahead and discuss
+some data preparation concepts.
+If you've ever had your own garden
+or shopped from a local farmers market
+you know that the vegetables there are sometimes dirty.
+Right?
+They came straight from the ground.
+Now, before we consume it
+and make it into a delicious casserole
+we need to clean it, remove all the dirt and sanitize it.
+We could think about this same process as what we need
+to do to our data before we feed it
+into our machine learning model.
+The reason that we do this
+is because machine learning algorithms like numbers,
+they like math.
+And since a lot of our data is text based,
+sometimes we need to convert those to numbers.
+Sometimes we need to handle values that are missing.
+And sometimes we need to find
+inaccuracies or outliers upfront
+so our machine learning models can make
+the correct predictions with the data that we give it.
+So if we take a look at our machine learning cycle
+we know that we are trying to clean and prepare our data
+but before we can do that
+we first need to understand our data.
+Once we understand our data
+we can start to use different techniques
+that help us transform it or prepare it
+so our machine learning model can
+make proper predictions with it.
+It can take the values of the data set
+apply it to whatever algorithm the model is using
+and output the correct results.
+Now the concept of data preparation is just simply put:
+It's changing our data set
+so it's ready for our machine learning problem.
+Now this can come in many different formats
+and we can use many different techniques
+but essentially what we're trying to do is, do things like
+remove incomplete and incorrectly formatted values,
+irrelevant data and remove duplicate data.
+Sometimes we need to change text based values
+into numeric values, group different attributes together,
+combine different attributes, take text strings
+and break them into different tokens
+and redesign features in general.
+Now not all of these techniques are going to be relevant
+for every data set, but depending on the problem on hand
+and the machine learning algorithm you're using
+you could pick and choose different techniques to use
+to prepare your data.
+What this does is it ensures that the relevant features
+are used for the problem at hand.
+And just know that the data preparation process
+is usually the most time consuming part of machine learning.
+The reason that this is true is because if we feed
+a machine learning algorithm unprepared data,
+then the model that it creates is going to be useless.
+It's not going to solve any problems.
+We need to feed it good data so it can produce good results.
+Over the next few lectures I will discuss
+a few different techniques and processes
+that we can use to prepare our data.
+Now these aren't the only techniques to use
+but they're some of the most important ones
+that we use in machine learning.
+We'll start off by talking about categorical encoding.
+And this is just
+changing text based values into numeric values.
+We'll next talk about feature engineering
+which is essentially just transforming our features
+so they're relevant for the problem at hand.
+And finally we'll talk about different techniques to use
+to handle missing values within our data set.
+So for example let's take this data set
+with some Star Wars' character names
+and some attributes about those characters.
+Now the features of this data set are
+Name, Evil, and the Affiliation.
+Some of the first things that I notice with this data set
+is that the formatting is off for a couple of our attributes
+right, we know that in the evil column
+we want a one or a zero,
+so values like 'No' we would need to change.
+We can also see in the affiliation column
+that we're looking for either rebels or empire.
+So the value REB will need to be mapped to rebels.
+Next we see we have a few missing values as well
+so we'll need to take care of those
+and we'll talk about some different techniques
+to use to handle missing values.
+Next, we also see some duplicate values.
+Depending on the problem at hand,
+duplicate values could skew results.
+So we may want to think about removing these.
+And again in the affiliation column we see bounty hunter,
+and we're only looking for Rebels or Empire so we'll need to
+figure out another way to handle that observation.
+So we're ready to choose our machine learning algorithm
+and we go ahead and choose one but we find out
+that the affiliation column needs to be encoded.
+This means that the machine learning algorithm
+doesn't accept text based values or categorical values
+as the target attribute affiliation.
+So we will need to encode these values into a zero or one
+or numeric values.
+Now this is just a simple example of a few different
+techniques and ways that we can start thinking about
+transforming or preparing our data.
+So in summary, what we are trying to do is take data
+that's unprepared or dirty
+and transform it to something that is actually useful,
+something that we can actually consume within our model.
+You might be asking questions like,
+" okay, well I understand that we need
+to transform our data, I know we need to clean it up.
+but how do we actually do this?"
+Well luckily there's a few different tools
+within AWS, that help us transform our data
+and get it ready for our machine learning model.
+A couple of tools that we can use
+in the machine learning suite are
+SageMaker and Jupyter Notebooks as well as AWS Glue
+which we've already mentioned is an ETL tool.
+We can think about transforming our data
+in more of an ad-hoc way using Jupyter Notebooks
+and then with AWS Glue we can think about creating
+long standing transformation jobs
+that we can run over and over to prepare our data.
+So if you have any questions that come up on the exam
+that have to do with data transformation or ETL jobs,
+just think of AWS Glue.
+All right,
+so that's the end of the concepts of data preparation.
+If you have any questions about anything I've discussed
+then please post in the course forum
+if not, then join me in the next lecture.

@@ -1,0 +1,160 @@
+Okay, congratulations on making it this far.
+This is the longest chapter so far, and I'll go ahead
+and go over some data preparation exam tips.
+that I think are important.
+First know what data preparation is
+and why it's important in machine learning.
+Remember that many of the machine learning algorithms
+that we use, like our data in certain formats.
+Whether it's numeric format, or our numbers scaled,
+just remember that, depending on what algorithm you choose,
+your data may need to be prepared in a certain way.
+We talked about how the data preparation process consists
+of many layers, and we need
+to understand the different techniques
+that we can use to prepare our data.
+So we'll go ahead and go over those now.
+We talked about categorical encoding
+and how some machine learning algorithms like their data
+to be in numeric format, rather than text format.
+Understand the difference between ordinal
+and nominal categorical features.
+Remember that depending on what type of categorical features
+that we have, we can handle the
+categorical encoding differently.
+Remember that ordinal means the order
+of the values does matter.
+And remember that nominal means that the order
+of the values does not matter.
+And be able to recognize and understand the difference
+between categorical data and continuous data.
+Remember that categorical data has discreet features,
+where there is only a few different groups
+or selections that you can choose from.
+And remember that continuous data can be measured
+on a number line.
+Just remember that categorical data is qualitative,
+and continuous data is quantitative.
+And know what one-hot encoding is, and when to use it.
+Remember that we used one-hot encoding
+on categorical values, and we assign a one
+to the observation that had the value,
+and a zero to the observations that didn't have the value.
+Next we talked about numeric feature engineering,
+and we need to know why it's important.
+And this is because certain machine learning algorithms
+can't handle extremely large numbers very well.
+So, if the numeric values are on a really large scale,
+like millions, tens of millions, or billions,
+some machine learning algorithms are not able
+to do calculations very precisely with these large numbers.
+And this led us to the feature engineering step
+of feature scaling.
+And we talked about two different techniques.
+Normalization and standardization.
+And remember that normalization is between zero and one,
+but doesn't handle outliers very well.
+And remember that standardization has the mean value
+at zero, and the other values are measured by their Z-score.
+And remember that it's less effected by outliers.
+And we also talked about binning and when this is used.
+Sometimes we may have numeric values
+where the small increments
+of the numeric values really aren't important to us.
+During an example, I showed how we could bin the age
+into certain age groups or life stages.
+Next we talked about text feature engineering
+and why it might be an important step
+in the data preparation process.
+Some machine learning algorithms need the text data broken
+up into bite size pieces, so it's able to handle
+and determine important features about the text data.
+Remember, we talked about several different techniques
+that we could use in text feature engineering.
+And most of these had to do with breaking up text data
+into smaller chunks or bite sized pieces.
+Remember we talked about n-gram,
+orthogonal sparse bigram or OSB.
+We talked about term frequency-inverse document frequency,
+removing punctuation, lowercase transformation,
+and finally we talked about the Cartesian product.
+You should be able to recognize these and know when
+to apply one over the other.
+We talked about how we could remove punctuation
+and the lowercase transformation and we also talked
+about the Cartesian product.
+We need to understand why feature engineering dates,
+is important as well.
+We can find out a lot more important information
+about dates if we break the date down into things like,
+was it a weekday, was it a weekend,
+so remember the questions that we can answer
+when dates are transformed.
+Next we talked about a few other types
+of feature engineering and I wanted
+to include feature engineering image data,
+and audio data for completeness.
+The feature engineering process isn't bound
+to just your traditional data sets,
+but you can also feature engineer other types of data.
+We also talked about different techniques
+to handle missing values.
+Know why we need to handle missing values,
+and why it's an important step in data preparation.
+There are some machine learning algorithms
+that don't handle missing values well at all.
+And most machine learning algorithms are going
+to skew results if you have a lot of missing data.
+Remember the different techniques that we used
+to replace missing values,
+we could use a supervised learning algorithm,
+or we can use mean, median, and mode.
+We could also drop the rows that contain missing values.
+And understand the implications of dropping rows
+and understand what data imputation is.
+Remember that replacing values within our dataset
+with statistical methods like mean, median and mode,
+or a supervised learning algorithm,
+is what we know as data imputation.
+Next we talked about feature selection
+and why it's an important step in data preparation.
+We need to understand which features are going
+to help us solve the problem at hand.
+If the features aren't important to us
+in helping us solve the problem,
+then we can remove those features.
+Understand the difference between feature selection
+and principle component analysis.
+Remember that feature selection is an intuitive step
+that humans take in deciding which features need to stay
+or go within our dataset, and principle component analysis,
+is an unsupervised algorithm that we use during the modeling
+and the algorithm selection step
+of our machine learning process.
+And finally, know the different data preparation tools
+that we can use within AWS, to help transform our data.
+Be sure you understand all of the parts of AWS Glue,
+including data catalogs, crawlers, and jobs,
+and what each one of these do.
+And finally, be able to identify these different
+AWS services and when
+to use one transformation tool over the other.
+Now as far as the exam, AWS Glue is going to be your go
+to place for any ETL or data transformation processes.
+But I wanted to make sure
+that I mentioned several other tools,
+and you understand the difference
+between each one of these data preparation tools.
+So with that, be sure to read
+and watch any additional resources that I've posted here,
+if you're on a browser within a desktop.
+And they'll be down here if you're on a mobile device.
+These resources will help you create a better understanding
+of data preparation as a whole,
+and how we use it in machine learning.
+So congratulations on finishing this chapter,
+I know it's been a long one.
+If you have any questions or comments then please post
+in the course forum, if not, then let's go ahead
+and move on to the next chapter.
+Thanks everybody.
